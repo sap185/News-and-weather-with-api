@@ -13,13 +13,16 @@ const apNews = document.getElementById("apNews")
 const bitnews = document.getElementById("bitnews")
 const tech = document.getElementById("tech")
 
+const apiKey='52c93170940b4826bf7def9caa8d8edf'
 
 
- /*innews*/    const url1 = "https://newsapi.org/v2/top-headlines?country=in&apiKey=52c93170940b4826bf7def9caa8d8edf";
- /* gnews*/    const url2 = "https://newsapi.org/v2/top-headlines?country=us&apiKey=52c93170940b4826bf7def9caa8d8edf";
- /*apnews*/    const url3 = "https://newsapi.org/v2/everything?q=apple&from=2023-08-17&to=2023-08-17&sortBy=popularity&apiKey=52c93170940b4826bf7def9caa8d8edf";
- /*bitnews*/    const url4 = " https://newsapi.org/v2/everything?q=bitcoin&apiKey=52c93170940b4826bf7def9caa8d8edf";
- /*tech*/    const url5 = "  https://newsapi.org/v2/everything?domains=techcrunch.com,thenextweb.com&apiKey=52c93170940b4826bf7def9caa8d8edf";
+
+
+ /*innews*/    const url1 = `https://newsapi.org/v2/top-headlines?country=in&apiKey=${apiKey}`;
+ /* gnews*/    const url2 = `https://newsapi.org/v2/top-headlines?country=us&apiKey=${apiKey}`;
+ /*apnews*/    const url3 = `https://newsapi.org/v2/everything?q=apple&from=2023-08-17&to=2023-08-17&sortBy=popularity&apiKey=${apiKey}`;
+ /*bitnews*/    const url4 = `https://newsapi.org/v2/everything?q=bitcoin&apiKey=${apiKey}`;
+ /*tech*/    const url5 = `https://newsapi.org/v2/everything?domains=techcrunch.com,thenextweb.com&apiKey=${apiKey}`;
 
 
 const News = (url) => {
